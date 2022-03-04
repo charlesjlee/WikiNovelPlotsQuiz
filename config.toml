@@ -1,0 +1,39 @@
+baseurl                  = "https://charlesjlee.github.io/"           # Your domain name. Must end with "/"
+languageCode             = "en-us"
+defaultContentLanguage   = "en"
+isMultilingual           = false
+title                    = "WikiNovelPlotsQuiz"
+
+# description = "A Custom Hugo Shortcode for Interactive Quizzes"
+theme = "hugo-theme-learn"
+
+[params]
+  # description = "A Custom Hugo Shortcode for Interactive Quizzes"
+  showVisitedLinks = false
+  disableBreadcrumb = true
+  disableNextPrev = true
+  disableSearch = true
+  disableHistory = true
+  disableShortcutsTitle = true
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[minify]
+  disableHTML = true
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-align-justify'></i> Quiz"
+url = "/"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-question'></i> About"
+url = "about"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/charlesjlee/WikiNovelPlotsQuiz"
+weight = 30
