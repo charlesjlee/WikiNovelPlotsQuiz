@@ -26,3 +26,15 @@ def get_gpt_summary(summary_clean):
     )
     return response.get('choices')[0]['text']
 ```
+
+## Known issues
+- some before & after plots are identical
+- plots are too long
+- some altered plots are obvious, e.g. missing parentheses, much shorter
+
+## Future work
+- choose shorter plots, around ~300 characters
+- skip plots with parentheses
+- make before & after the same number of sentences
+- prompt with just first two(?) sentences and generate the rest instead of feeding the entire plot
+- add text-to-image pictures
