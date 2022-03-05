@@ -3,8 +3,7 @@ name: build and deploy
 on:
   push:
     branches:
-      - master
-      - dev
+      - main
 
 jobs:
   build-deploy:
@@ -20,7 +19,7 @@ jobs:
           hugo-version: '0.80.0'
 
       - name: Build
-        run: cd demo && hugo --minify -d ../public
+        run: hugo --minify -d ../public
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
