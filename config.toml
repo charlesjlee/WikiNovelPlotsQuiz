@@ -1,4 +1,4 @@
-baseurl                  = "https://charlesjlee.github.io/"           # Your domain name. Must end with "/"
+baseurl                  = "https://charlesjlee.github.io/WikiNovelPlotsQuiz/"           # Your domain name. Must end with "/"
 languageCode             = "en-us"
 defaultContentLanguage   = "en"
 isMultilingual           = false
@@ -29,7 +29,7 @@ weight = 10
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-fw fa-question'></i> About"
-url = "about"
+url = "/about"
 weight = 20
 
 [[menu.shortcuts]]
